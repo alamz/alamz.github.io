@@ -1,3 +1,16 @@
-h1 {
-	background-color: black;
+header {
+	color: #F6A900;
+}
+
+header h1 
+{
+	color: #663915;
+	font-family: Arial, "sans-serif";
+	font-size: 30px;
+}
+
+header h1 img 
+{
+	height: 50px;
+	width: 150px;
 }
