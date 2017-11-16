@@ -4,17 +4,43 @@
 
 		<title>Aurora 42</title>
 
-		<link rel="stylesheet" type="text/css" href="css/syles.css">
-
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		
 	</head>
 	<body>
 		<header>
 			
 			<h1>
-				AURORA | <img alt = "university monogram" src="images/umanlogotight.jpg">
+				<img alt = "university monogram" src="images/umanlogotight.jpg"> | AURORA
 			</h1>
-			
+			<a href="index.html"><span id="homelink">Back to HOME</span></a>
+			<a href="#"><span id="logout">LOGOUT</span></a>
 		</header>
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'personal')">Personal Information</button>
+			<button class="tablinks" onclick="openTab(event, 'enrollment')">Enrollment Records</button>
+			<button class="tablinks" onclick="openTab(event, 'records')">Student Records</button>
+		</div>
+
+		<div id = "personal" class="tabcontent">
+			<h3>Personal Information</h3>
+			<p>This will link to personal information webpage from older aurora</p>
+		</div>
+
+		<div id = "enrollment" class="tabcontent">
+			<h3>Enrollment Records</h3>
+			<p>This will link to Enrollment Records webpage from older aurora. Shows all links related to enrollment.</p>
+		</div>
+
+		<div id = "records" class="tabcontent">
+			<h3>Student Aids and Records</h3>
+			<p>This will link to student records (financial) webpage from older aurora</p>
+		</div>
+		
+		<script src="scripts/jquery-3.2.1.min.js"></script>
+		<script src="scripts/script.js"></script>
+
 	</body>
-	<script type="text/javascript" src="scripts/script.js"></script>
+
+	
 </html>
