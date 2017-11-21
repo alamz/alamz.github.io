@@ -73,9 +73,7 @@ div.tab button.active
 
 .columns
 {
-
 	column-count: 3;
-	
 }
 
 .columns h1
@@ -86,15 +84,17 @@ div.tab button.active
 	border: 2px solid black;
 }
 
-button.tiles 
+div.tiles
 {
-	
-	height: auto;
-	width: 33%;
-	padding: 10px 0px; 
-	color: white;
-	background-color: blue;
-	border: 2px solid white;
+	background-color: #F6A900;
+	height: 300px;
+	width: 100%;
+}
+
+div.tiles .tileContent
+{
+	display: block;
+	margin: 20px auto;
 }
 
 /* Style the tab content */
