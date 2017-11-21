@@ -61,7 +61,7 @@ div.tab button
 /* Change the background color of buttons on hover */
 div.tab button:hover
 {
-	transition: 3s;
+	transition: .3s;
 	background-color: #ddd;
 }
 
@@ -69,6 +69,32 @@ div.tab button:hover
 div.tab button.active
 {
 	background-color: #ccc;
+}
+
+.columns
+{
+
+	column-count: 3;
+	
+}
+
+.columns h1
+{
+	margin: 0px 10px;
+	font-family: Arial, "sans-serif";
+	background-color: #666;
+	border: 2px solid black;
+}
+
+button.tiles 
+{
+	
+	height: auto;
+	width: 33%;
+	padding: 10px 0px; 
+	color: white;
+	background-color: blue;
+	border: 2px solid white;
 }
 
 /* Style the tab content */

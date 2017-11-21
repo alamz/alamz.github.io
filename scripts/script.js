@@ -2,7 +2,7 @@ function openTab(evt, tabName)
 {
 	//Declare proper variables
 	var i, tabcontent, tablinks;
-	var eventClass;
+	var eventClass, eventID;
 	//hide all elements with class=tabcontent
 	tabcontent = document.getElementsByClassName('tabcontent');
 	for (i = 0; i < tabcontent.length; i++) {
@@ -13,20 +13,24 @@ function openTab(evt, tabName)
 	tablinks = document.getElementsByClassName('tablinks');
 	for(i=0;i<tablinks.length;i++)
 	{
-		tablinks[i].className = tablinks[i].className.replace("active","");
+		tablinks[i].className = tablinks[i].className.replace(" active","");
 	}
 
 	//add class=active to tab that was clicked on, and show it
 	eventClass = evt.currentTarget.className;
-	if(eventClass = " active")
+	eventID = document.getElementById(tabName);
+	if(eventID.style.display === 'none')
 	{
-		document.getElementById(tabName).style.display = "none";
-		eventClass = eventClass.replace("active","");
+		console.log("DISPLAY IS BLOCKED");
+		eventID.style.display = "block";
+		eventClass += " active";
+		
 	}
 	else 
 	{
-		document.getElementById(tabName).style.display = "block";
-		eventClass += " active";
+		console.log(eventID.style.display +"DISPLAY IS NOT BLOCKED");
+		eventID.style.display = "none";
+		eventClass = eventClass.replace(" active","");
 	}
 	
 }
