@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<title>Aurora 42</title>
+		<title>Aurora by TEAM #40</title>
 
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		
@@ -11,10 +11,10 @@
 		<header>
 			
 			<h1>
-				<img alt = "university monogram" src="images/umanlogotight.jpg"> | AURORA
+				<a href="index.html"><img alt = "university monogram" src="images/umanlogotight.jpg"> | AURORA</a>
 			</h1>
 			<a href="index.html"><span id="homelink">Back to HOME</span></a>
-			<a href="#"><span id="logout">LOGOUT</span></a>
+			<a href="https://aurora.umanitoba.ca/"><span id="logout">LOGOUT</span></a>
 		</header>
 		<div class="tab">
 			<a href="#"><button class="tablinks" onclick="openTab(event, 'personal')">Personal Information</button></a>
@@ -44,25 +44,50 @@
 			<div class="first">
 				<h1>Quick Access</h1>
 				<div id="quickAccess" class="tiles">
-					<button id="addDropTile" class="tileContent"> ADD OR DROP CLASSES </button>
+					<button id="addDropTile" class="tileContent" onclick="goToUrl('Registration.html');"> ADD OR DROP CLASSES </button>
 					<button id="weekGlanceTile" class="tileContent"> WEEK AT A GLANCE </button>
-					<button id="recordsTile" class="tileContent"> STUDENT RECORDS </button>
+					<button id="recordsTile" class="tileContent"> ACTIVE REGISTRATION </button>
 				</div>
 			</div>
 			
 			<div class="second">
 				<h1>Important Dates</h1>
 				<div id="importantDates" class="tiles">
-					<button id="myExamsTile" class="tileContent"> MY EXAMS </button>
+					<button id="myExamsTile" class="tileContent" onclick="clickCounter();"> MY EXAMS </button>
+					<h3>Tuition Fees Deadline: </h3><span class="date">September 23, 2017</span>
+					<h3>Voluntary Withdrawal Deadline: </h3><span class="date">November 17, 2017</span>
 				</div>
 			</div>
 			
 			<div class="third">
 				<h1>Last Visit</h1>
 				<div id="lastVisit" class="tiles">				
-					<span class="tileContent">YOU VISITED THIS SITE ON: </span>
-					<span class="tileContent">YOU VISITED THIS SITE ON: </span>
-					<span class="tileContent">YOU VISITED THIS SITE ON: </span>
+					<span class="tileContent">
+						YOU VISITED <a href="#">MY EXAMS</a> ON: <p id="date1"></p>
+						<script type="text/javascript">
+							var n = new Date();
+							var y = n.getFullYear();
+							var m = n.getMonth() +1;
+							var d = n.getDate();
+							document.getElementById("date1").innerHTML = d+"/"+m+"/"+y;
+						</script>
+					</span>
+					<span class="tileContent">YOU VISITED <a href="#">REGISTRATION HISTORY</a> ON:  <p id="date2"></p>
+						<script type="text/javascript">
+							var n = new Date();
+							var y = n.getFullYear();
+							var m = n.getMonth() +1;
+							var d = n.getDate();
+							document.getElementById("date2").innerHTML = d+"/"+m+"/"+y;
+						</script></span>
+					<span class="tileContent">YOU VISITED <a href="#">MY ACCOUNT SUMMARY</a> ON: <p id="date3"></p>
+						<script type="text/javascript">
+							var n = new Date();
+							var y = n.getFullYear();
+							var m = n.getMonth() +1;
+							var d = n.getDate();
+							document.getElementById("date3").innerHTML = d+"/"+m+"/"+y;
+						</script></span> 
 				</div>
 			</div>
 		</div>

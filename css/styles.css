@@ -6,16 +6,22 @@ header {
 
 header h1 
 {
-	border: 2px black;
 	color: #663915;
 	font-family: Arial, "sans-serif";
 	font-size: 45px;
+}
+
+header h1 a 
+{
+	text-decoration: none;
+	color: #41270C;
 }
 
 header h1 img 
 {
 	height: 50px;
 	width: 150px;
+	margin: -13px auto;
 }
 
 header span#homelink
@@ -80,21 +86,45 @@ div.tab button.active
 {
 	margin: 0px 10px;
 	font-family: Arial, "sans-serif";
-	background-color: #666;
+	background-color: #41270C;
 	border: 2px solid black;
+	color: white;
+	text-align: center;
+
 }
 
 div.tiles
 {
 	background-color: #F6A900;
-	height: 300px;
+	height: 500px;
 	width: 100%;
+	position: relative;
+	padding: 10px 0px;
 }
 
-div.tiles .tileContent
+.tiles .tileContent
 {
 	display: block;
-	margin: 20px auto;
+	position: relative;
+	
+	background-color: white;
+	margin: 0px auto 20px auto;
+	padding: 40px 30px;
+}
+
+.tiles h3
+{
+	background-color: white;
+	color: #41270C;
+	font-family: Arial, "sans-serif";
+	font-size: 10pt;
+	margin: 5px 5px;
+}
+
+.date 
+{
+	margin: 0px 33%;
+	text-align: center;
 }
 
 /* Style the tab content */

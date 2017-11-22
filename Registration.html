@@ -1,0 +1,403 @@
+<html>
+  <head>
+    <title>Class Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width:33.333%;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    width:100%;
+    height:100%;
+}
+div1, div2, div3, group {
+    padding: 10px;
+    margin:10px;
+    border:3px solid black;
+    color: black;
+background: white;
+    display:inline-block
+}
+div2 {
+    padding: 10px;
+    margin:10px;
+    border:3px solid black;
+    color: black;
+background: white;
+    display:inline-block
+}
+div3 {
+    padding: 10px;
+    margin:10px;
+    border:3px solid black;
+    color: black;
+background: white;
+    display:inline-block
+}
+#Fall {background-color:#92B6D5;}
+#Winter {background-color:rgb(190,190,190);}
+#Summer {background-color:#E87F60;}
+span {
+    padding: 10px;
+    margin:10px;
+    border:3px solid black;
+    color: black;
+    background: white;
+    display:inline-block;
+}
+td {
+    border: 1px solid black;
+padding: 5px;
+}
+table, th{
+padding: 5px;
+}
+available {
+    padding: 10px;
+    margin:10px;
+    border:3px solid rgb(127,255,0);
+    color: black;
+    background: white;
+    display:inline-block;
+}
+</style>
+
+<body>
+</body>
+</html>
+<body>
+    <header>
+            
+            <h1>
+                <a href="index.html"><img alt = "university monogram" src="images/umanlogotight.jpg"> | AURORA</a>
+            </h1>
+            <a href="index.html"><span id="homelink">Back to HOME</span></a>
+            <a href="https://aurora.umanitoba.ca/"><span id="logout">LOGOUT</span></a>
+        </header>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Fall')">Fall</button>
+  <button class="tablinks" onclick="openCity(event, 'Winter')">Winter</button>
+  <button class="tablinks" onclick="openCity(event, 'Summer')">Summer</button>
+</div>
+
+<div id="Fall" class="tabcontent">
+  <h3>Fall Semester</h3>
+<group style="width:98.8%">
+	<div1 id="div1" style="vertical-align:top; width:25%">
+	 <div align="center">
+	  Available
+	</div> 
+	</div1>
+	<div2 id="div2" style="vertical-align:top; width:25%">
+	 <div align="center">
+	  Registered
+	</div> 
+	</div2>
+	<div3 id="div3" style="vertical-align:top; width:46%">
+	 <div align="center">
+	  Schedule
+	</div> 
+	<table>
+  <colgroup>
+    <col span="15">
+    <col style="background-color:white">
+  </colgroup>
+  <tr>
+    <th></th>
+    <th>Monday</th>
+    <th>Wednesday</th>
+    <th>Friday</th>
+    <th></th>
+    <th>Tuesday</th>
+    <th>Thursday</th>
+  </tr>
+  <tr>
+    <th id ="MWF" rowspan="1">8:30-9:20 am</th>
+    <td id="m1"></td>
+    <td id="w1"></td>
+    <td id="f1"></td>
+    <th id ="TR">8:30-9:45 am</th>
+    <td id="t1"></td>
+    <td id="th1"></td>
+  </tr>
+  <tr>
+    <th>9:30-10:20 am</th>
+    <td id="m2"></td>
+    <td id="w2"></td>
+    <td id="f2"></td>
+    <th id ="TR">10:00-11:15 am</th>
+    <td id="t2"></td>
+    <td id="th2"></td>
+  </tr>
+  <tr>
+    <th>10:30-11:20 am</th>
+    <td id="m3"></td>
+    <td id="w3"></td>
+    <td id="f3"></td>
+    <th id ="TR">11:30 am-12:45 pm</th>
+    <td id="t3"></td>
+    <td id="th3"></td>
+  </tr>
+    <tr>
+    <th>11:30 am-12:20 pm</th>
+    <td id="m4"></td>
+    <td id="w4"></td>
+    <td id="f4"></td>
+    <th id ="TR">1:00-2:15 pm</th>
+    <td id="t4"></td>
+    <td id="th4"></td>
+  </tr>
+    <tr>
+    <th>12:30-1:20 pm</td>
+    <td id="m5"></td>
+    <td id="w5"></td>
+    <td id="f5"></td>
+    <th id ="TR">2:30-3:45 pm</th>
+    <td id="t5"></td>
+    <td id="th5"></td>
+  </tr>
+    <tr>
+    <th>1:30-2:20 pm</th>
+    <td id="m6"></td>
+    <td id="w6"></td>
+    <td id="f6"></td>
+    <th id ="TR">4:00-5:15 pm</th>
+    <td id="t6"></td>
+    <td id="th6"></td>
+  </tr>
+    <tr>
+    <th>2:30-3:20 pm</th>
+    <td id="m7"></td>
+    <td id="w7"></td>
+    <td id="f7"></td>
+    <th id ="TR">7:00-10pm</th>
+    <td id="t7"></td>
+    <td id="th7"></td>
+  </tr>
+    <tr>
+    <th>3:30-4:20 pm</th>
+    <td id="m8"></td>
+    <td id="w8"></td>
+    <td id="f8"></td>
+  </tr>
+    <tr>
+    <th>4:00-5:15 pm</th>
+    <td id="m9"></td>
+    <td id="w9"></td>
+    <td id="f9"></td>
+  </tr>
+    <tr>
+    <th>6:00-9:00 pm</th>
+    <td id="m10"></td>
+    <td id="w10"></td>
+    <td id="f10"></td>
+  </tr>
+
+</table>
+	</div3>
+</div>
+</group>
+
+<div id="Winter" class="tabcontent">
+  <h3>Winter Semester</h3>
+</div>
+
+<div id="Summer" class="tabcontent">
+  <h3>Summer Semester</h3>
+</div>
+<script>
+
+var class1 = {
+    faculty:"COMP",
+    className:"Discrete Math",
+    section:"A01",
+    courseID:2130,
+    time:"MWF: 9:30-10:20",
+    filledSeats:50,
+    maxSeats:75,
+  loc:"E-153 PGI Complex",
+profEmail:"CNyaa@cs.thisuniversity.ca",
+prereq:"COMP 1020",
+desc:"Some description",
+    prof:"Dr Nyaa"
+};
+var class2 = {
+    faculty:"COMP",
+    className:"Software Engineering",
+    section:"A01",
+    courseID:3350,
+    time:"MWF: 10:30-11:20",
+    filledSeats:73,
+    maxSeats:80,
+    loc:"E-102 PGI Complex",
+profEmail:"ACharles@cs.thisuniversity.ca",
+prereq:"COMP 1020",
+desc:"Some description",
+    prof:"Dr Charles"
+};
+
+linebreak = document.createElement("br");
+var para = document.createElement("available");
+para.setAttribute("id", "span1");
+var node = document.createTextNode("Hi");
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(linebreak);
+element.appendChild(para);
+document.getElementById("span1").innerHTML = class1.faculty+" " + class1.courseID +  ": " + class1.className + " - " + class1.time + " <br><br>" + " Seats: "+class1.filledSeats+"/"+class1.maxSeats+ " &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Professor: "+class1.prof;
+$('div1').append($('<img>',{id:'add1',src:'images/addButton.png'}))
+
+linebreak = document.createElement("br");
+var para = document.createElement("available");
+para.setAttribute("id", "span2");
+var node = document.createTextNode("Hi");
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(linebreak);
+element.appendChild(para);
+document.getElementById("span2").innerHTML = class2.faculty+" " + class2.courseID +  ": " + class2.className + " - " + class2.time + " <br><br>" + " Seats: "+class2.filledSeats+"/"+class2.maxSeats+ " &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Professor: "+class2.prof;
+$('div1').append($('<img>',{id:'add2',src:'images/addButton.png'}))
+
+/*Registered*/
+
+linebreak = document.createElement("br");
+var para = document.createElement("available");
+para.setAttribute("id", "span1in");
+var node = document.createTextNode("Hi");
+para.appendChild(node);
+var element = document.getElementById("div2");
+element.appendChild(linebreak);
+element.appendChild(para);
+document.getElementById("span1in").innerHTML = class1.faculty+" " + class1.courseID +  ": " + class1.className + " - " + class1.time + " <br><br>" + " Seats: "+(class1.filledSeats+1)+"/"+class1.maxSeats+ " &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Professor: "+class1.prof;
+$('div2').append($('<img>',{id:'remove1',src:'images/removeButton.png'})) 
+$("#span1in").hide();    $("#remove1").hide();   
+
+linebreak = document.createElement("br");
+var para = document.createElement("available");
+para.setAttribute("id", "span2in");
+var node = document.createTextNode("Hi");
+para.appendChild(node);
+var element = document.getElementById("div2");
+element.appendChild(linebreak);
+element.appendChild(para);
+document.getElementById("span2in").innerHTML = class2.faculty+" " + class2.courseID +  ": " + class2.className + " - " + class2.time + " <br><br>" + " Seats: "+(class2.filledSeats+1)+"/"+class2.maxSeats+ " &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; Professor: "+class2.prof;
+$('div2').append($('<img>',{id:'remove2',src:'images/removeButton.png'})) 
+$("#span2in").hide();    $("#remove2").hide();   
+
+/*Schedule*/
+
+$(document).ready(function(){
+   $("#span1, #span1in").click(function(){
+        alert(class1.faculty+" " + class1.courseID + " "+class1.section+ ": " + class1.className+" \n\nTime: "+class1.time+"\n\nSeats: "+class1.filledSeats+"/"+class1.maxSeats+"\n\nProfessor: "+class1.prof+"\n\nProf Email: "+class1.profEmail+"\n\nLocation: "+class1.loc+"\n\nPrerequisites: "+class1.prereq+"\n\nDescription: "+class1.desc+"\n\n" );
+    });
+   $("#span2, #span2in").click(function(){
+        alert(class2.faculty+" " + class2.courseID +  ": " + class2.className+" \n\nTime: "+class2.time+"\n\nSeats: "+class2.filledSeats+"/"+class2.maxSeats+"\n\nProfessor: "+class2.prof+"\n\nProf Email: "+class2.profEmail+"\n\nLocation: "+class2.loc+"\n\nPrerequisites: "+class2.prereq+"\n\nDescription: "+class2.desc+"\n\n" );
+    });
+   $("#add1").click(function(){
+	$("#span1").hide();    $("#add1").hide();   
+	$("#span1in").show();    $("#remove1").show();
+	document.getElementById("m2").innerHTML = "COMP 2130";
+	document.getElementById("m2").style.backgroundColor = "rgb(127,255,0)"; 
+	document.getElementById("w2").innerHTML = "COMP 2130";
+	document.getElementById("w2").style.backgroundColor = "rgb(127,255,0)"; 
+	document.getElementById("f2").innerHTML = "COMP 2130";
+	document.getElementById("f2").style.backgroundColor = "rgb(127,255,0)"; 
+    });
+   $("#add2").click(function(){
+	$("#span2").hide();    $("#add2").hide();   
+	$("#span2in").show();    $("#remove2").show();
+	document.getElementById("m3").innerHTML = "COMP 3350";
+	document.getElementById("m3").style.backgroundColor = "rgb(127,255,0)"; 
+	document.getElementById("w3").innerHTML = "COMP 3350";
+	document.getElementById("w3").style.backgroundColor = "rgb(127,255,0)"; 
+	document.getElementById("f3").innerHTML = "COMP 3350";
+	document.getElementById("f3").style.backgroundColor = "rgb(127,255,0)"; 
+    });
+$("#remove1").click(function(){
+    var r = confirm("Are you sure you want to remove COMP 2130?");
+    if (r == true) {
+	$("#span1").show();    $("#add1").show();   
+	$("#span1in").hide();    $("#remove1").hide();
+	document.getElementById("m2").innerHTML = "";
+	document.getElementById("m2").style.backgroundColor = "white"; 
+	document.getElementById("w2").innerHTML = "";
+	document.getElementById("w2").style.backgroundColor = "white"; 
+	document.getElementById("f2").innerHTML = "";
+	document.getElementById("f2").style.backgroundColor = "white"; 
+}
+    });
+$("#remove2").click(function(){
+    var r = confirm("Are you sure you want to remove COMP 3350?");
+    if (r == true) {
+	$("#span2").show();    $("#add2").show();   
+	$("#span2in").hide();    $("#remove2").hide();
+	document.getElementById("m3").innerHTML = "";
+	document.getElementById("m3").style.backgroundColor = "white"; 
+	document.getElementById("w3").innerHTML = "";
+	document.getElementById("w3").style.backgroundColor = "white"; 
+	document.getElementById("f3").innerHTML = "";
+	document.getElementById("f3").style.backgroundColor = "white"; 
+}
+    });
+});
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+/*// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+*/
+</script>
+     <script src="scripts/script.js"></script>
+</body>
+</html> 

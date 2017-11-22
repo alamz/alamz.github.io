@@ -34,3 +34,26 @@ function openTab(evt, tabName)
 	}
 	
 }
+
+function goToUrl(dest)
+{
+	location.href = dest;
+}
+
+function clickCounter()
+{
+	if(typeof(Storage) !== "undefined")
+	{	console.log(localStorage.getItem("count"));
+		if(localStorage.getItem("count") !== "undefined")
+		{
+			var addCount = localStorage.getItem("count") + 1; //get count
+			localStorage.setItem("count", addCount);
+		}
+		else
+			localStorage.setItem("count","1");
+	}
+	else
+	{
+		console.log("THIS BROWSER DOES NOT SUPPORT WEB STORAGE");
+	}
+}
