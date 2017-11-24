@@ -96,7 +96,7 @@ div.tab button.active
 div.tiles
 {
 	background-color: #F6A900;
-	height: 500px;
+	height: 800px;
 	width: 100%;
 	position: relative;
 	padding: 10px 0px;
@@ -123,8 +123,9 @@ div.tiles
 
 .date 
 {
-	margin: 0px 33%;
-	text-align: center;
+	display: inline;
+
+	margin: 0px auto 5px 10px;
 }
 
 /* Style the tab content */
