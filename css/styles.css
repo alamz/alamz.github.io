@@ -121,6 +121,11 @@ div.tiles
 	margin: 5px 5px;
 }
 
+.tiles .second 
+{
+	max-height: 75%;
+}
+
 .date 
 {
 	display: inline;
